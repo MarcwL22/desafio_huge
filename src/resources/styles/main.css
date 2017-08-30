@@ -1,0 +1,154 @@
+@import "fonts.css";
+
+/*Colors*/
+/*Magenta #ec008c
+Light Gray #eee
+Translucent Black rgba(0, 0, 0, 0.5)*/
+/*Core*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #fff;
+}
+
+/*Heading*/
+h1 {
+  font: 120px HUGEAvantGardeBold;
+}
+
+/*Reusable Components*/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/*Header*/
+header {
+  background-image:url(../images/background-image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 640px;
+  background-attachment: fixed;
+}
+
+.hide {
+  display: none;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+.logo {
+  float: left;
+  width: auto;
+  height: 24px;
+  margin: 24px 48px 0 24px;
+}
+
+.second-logo {
+  display: none;
+  height: 24px;
+  width: auto;
+  width: 50px;
+  margin: 20px 0 0 24px;
+}
+
+nav {
+  background-color:#ec008c;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0;
+  display: inline-block;
+	background-color: #ec008c;
+}
+
+nav a {
+  display: block;
+  padding: 24px;
+  font: 24px HUGEAvantGardeBold;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li ul li:hover {
+  background: #fff;
+  color: #ec008c;
+}
+
+nav a:hover{
+  background: #fff;
+  color: #ec008c;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+}
+
+nav ul li:hover > ul {
+  display:inherit;
+  z-index: 999;
+}
+
+nav ul ul li {
+  background-color: #fff;
+	width:250px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+nav ul ul li a {
+  padding: 12px 24px 12px;
+  color: #000;
+  font: 16px Galaxie;
+}
+
+nav ul ul li a:hover,
+nav ul ul li a:active {
+  background-color: #eee;
+  color: #ec008c;
+}
+/* li > a:only-child:after { content: ''; } */
+
+.btn-hamburguer {
+  color: #fff;
+  width: auto;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+  font-size: 200%;
+  margin: 5px 20px;
+}
+
+.btn-hamburguer:focus {
+  outline: none;
+}
+
+/*Section*/
+
+section {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.5);
+  font: 24px Galaxie;
+}
